@@ -20,3 +20,9 @@ Database Service Selector Component
   - Depends on your app. Maybe we use a GraphQL backend. In that case, most components get a fragmentRef passed in as props.
   - We'll simulate that paradigm by passing our hardcoded data in as props.
   - Easy to replace later with graphQL data.
+
+## Coding Time!
+
+Open [DBServiceSelector-start.test.js](../src/Components/__tests__/DBServiceSelector-start.test.js) and folow the instructions.
+
+If you get stuck, you can see an example solution in [DBServiceSelector-done.test.js](../src/Components/__tests__/DBServiceSelector-done.test.js)

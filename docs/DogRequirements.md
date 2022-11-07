@@ -17,3 +17,9 @@ Following principles of Test-Driven Development (TDD):
 - Turn requirements into automated tests.
 - Write just enough code for the tests to run and FAIL.
 - Adjust code until all tests pass.
+
+## Coding Time!
+
+Open [Dog-start.test.js](../src/Components/__tests__/Dog-start.test.js) and folow the instructions.
+
+If you get stuck, you can see an example solution in [Dog-done.test.js](../src/Components/__tests__/Dog-done.test.js)
