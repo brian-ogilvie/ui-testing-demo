@@ -23,6 +23,8 @@ some_directory
     |-- MyComponent.test.js
 ```
 
+The use of a `__tests__` folder matches with how Jest is configured by tools like `create-react-app`, telling the Jest crawler which files to run during testing.
+
 ## How do I run a test?
 
 If you've used `create-react-app`, you'll have an npm script `test` in your `package.json`.

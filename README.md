@@ -2,7 +2,7 @@
 
 A training session for Bootcampers Anonymous
 
-## Get Started
+## Getting Started
 
 [Jest Basics](./docs/JestBasics.md)
 <br />
@@ -10,4 +10,6 @@ A training session for Bootcampers Anonymous
 
 ## Testing React Components
 
-[Example 2: Service Selector](./docs/SelectorRequirements.md)
+[React Testing Basics](./docs/ReactTestingBasics.md)
+<br />
+[Example Assignment: Service Selector Component](./docs/SelectorRequirements.md)
