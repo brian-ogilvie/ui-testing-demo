@@ -3,7 +3,7 @@ import React, { useCallback } from "react";
 export default function DBServiceSelector({services, serviceID, setServiceID}) {
 
   const handleChange = useCallback(({target}) => {
-    setServiceID(parseInt(target.value, 10));
+    setServiceID(target.value);
   }, [setServiceID]);
 
   return (

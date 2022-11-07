@@ -1,15 +1,16 @@
 import DBServiceSelector from '../DBServiceSelector-done';
 
 import * as React from 'react';
-import {cleanup, fireEvent, render, screen} from '@testing-library/react';
+import {cleanup, render, screen} from '@testing-library/react';
+import userEvent from '@testing-library/user-event';
 
 const SERVICES = [
   {
-    service_id: 1,
+    service_id: "1",
     service_name: 'SQL Server',
   },
   {
-    service_id: 2,
+    service_id: "2",
     service_name: 'MySQL',
   },
 ];
@@ -45,7 +46,7 @@ describe('DBServiceSelector', () => {
     render(<TestRenderer />);
     const selector = screen.getByLabelText('Database Service');
     SERVICES.forEach(({service_id}) => {
-      fireEvent.change(selector, {target: {value: service_id}});
+      userEvent.selectOptions(selector, [service_id]);
       expect(mockSetServiceID).toHaveBeenCalledWith(service_id);
     });
   });
