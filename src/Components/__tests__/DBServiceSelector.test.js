@@ -22,7 +22,7 @@ describe('DBServiceSelector', () => {
     return (
       <DBServiceSelector
         services={SERVICES}
-        serviceID={0}
+        serviceID={null}
         setServiceID={mockSetServiceID}
       />
     );
@@ -31,15 +31,20 @@ describe('DBServiceSelector', () => {
   beforeEach(() => {
     mockSetServiceID.mockClear();
   });
-  
-  afterEach(cleanup);
-  
+    
   test('should render list of services', () => {
     render(<TestRenderer />);
     expect(screen.getByLabelText('Database Service')).toBeVisible();
     SERVICES.forEach(({service_name}) => {
       expect(screen.getByText(service_name)).toBeInTheDocument();
     });
+  });
+
+  test('no initial selection', () => {
+    render(<TestRenderer />);
+    const defaultOption = screen.getByText('Please Select...');
+    expect(defaultOption.selected).toBe(true);
+    expect(defaultOption.disabled).toBe(true);
   });
 
   test('should update selected value when user clicks an option', () => {

@@ -8,6 +8,7 @@ Database Service Selector Component
 
 - Render a select menu of DB services by their name.
 - State of selected value is managed by parent component (probably a form).
+- No initial selectoion.
 - Should update selected serviceID in the parent component when user makes a selection.
 - List should be dynamically populated with options from server.
 

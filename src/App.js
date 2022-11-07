@@ -1,23 +1,28 @@
-import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import DBServiceSelector from './Components/DBServiceSelector-done';
+
+const SERVICES = [
+  {
+    service_id: "1",
+    service_name: 'SQL Server',
+  },
+  {
+    service_id: "2",
+    service_name: 'MySQL',
+  },
+];
 
 function App() {
+  const [serviceID, setServiceID] = useState("");
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{maxWidth: '500px'}}>
+      <DBServiceSelector 
+        services={SERVICES} 
+        serviceID={serviceID} 
+        setServiceID={setServiceID} 
+      />
     </div>
   );
 }

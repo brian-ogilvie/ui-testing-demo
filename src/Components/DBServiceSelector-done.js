@@ -9,7 +9,8 @@ export default function DBServiceSelector({services, serviceID, setServiceID}) {
   return (
     <label htmlFor="services-selector">
       Database Service
-      <select id="services-selector" value={serviceID} onChange={handleChange}>
+      <select id="services-selector" value={serviceID ?? ''} onChange={handleChange}>
+        <option disabled value="">Please Select...</option>
         {services.map(({service_id, service_name}) => (
           <option key={service_id} value={service_id}>{service_name}</option>
         ))}
