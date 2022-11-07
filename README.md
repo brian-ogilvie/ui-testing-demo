@@ -4,8 +4,10 @@ A training session for Bootcampers Anonymous
 
 ## Get Started
 
-## Examples
+[Jest Basics](./docs/JestBasics.md)
+<br />
+[Example Assignment: Dog RegEx](./docs/DogRequirements.md)
 
-[Example 1: Dog RegEx](./docs/DogRequirements.md)
-<br/>
+## Testing React Components
+
 [Example 2: Service Selector](./docs/SelectorRequirements.md)
