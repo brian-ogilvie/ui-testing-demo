@@ -26,3 +26,5 @@ Database Service Selector Component
 Open [DBServiceSelector-start.test.js](../src/Components/__tests__/DBServiceSelector-start.test.js) and folow the instructions.
 
 If you get stuck, you can see an example solution in [DBServiceSelector-done.test.js](../src/Components/__tests__/DBServiceSelector-done.test.js)
+
+To see what the finished version actually looks like in the browser, fire up the app (`npm start`) and head over to `localhost:3000`.
