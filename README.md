@@ -13,3 +13,7 @@ A training session for Bootcampers Anonymous
 [React Testing Basics](./docs/ReactTestingBasics.md)
 <br />
 [Example Assignment: Service Selector Component](./docs/SelectorRequirements.md)
+
+## Random Resources
+
+[Kent C. Dodds: "Stop Mocking Fetch"](https://kentcdodds.com/blog/stop-mocking-fetch)
